@@ -15,6 +15,16 @@
   }
 }
 
+.facebook,.twitter {
+  height: 80px;
+
+  p {
+    position: relative;
+    top:35px;
+  }
+
+}
+
 .twitter-wrapper {
   margin: 0 auto;
   margin-left: 50px;
@@ -24,14 +34,13 @@
 #header.sticky
 {
   position: fixed;
+  background-color: #fff;
   width: 100%;
   max-width: 75rem;
   z-index: 1;
-
-}
-
-.head-menu {
-  background-color: #2b7732;
+  -webkit-box-shadow:0 10px 5px #264729;
+  -moz-box-shadow:0 10px 5px #264729;
+  box-shadow:0 10px 5px #264729;
 }
 
 .menu {
@@ -51,5 +60,10 @@
 div.menu-centered {
   > .menu {
     display: inline;
+
+    a {
+      color: #000;
+    }
+
   }
 }
