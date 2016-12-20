@@ -1,0 +1,55 @@
+.row {
+  background: #348C3D;
+}
+
+
+.flexslider {
+
+  background-color: transparent;
+  border: none;
+  .slides {
+    img {
+      margin: 0 auto;
+      width: auto;
+    }
+  }
+}
+
+.twitter-wrapper {
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#header.sticky
+{
+  position: fixed;
+  width: 100%;
+  max-width: 75rem;
+  z-index: 1;
+
+}
+
+.head-menu {
+  background-color: #2b7732;
+}
+
+.menu {
+
+  display:block;
+  width: 100%;
+}
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  height: auto;
+}
+
+
+div.menu-centered {
+  > .menu {
+    display: inline;
+  }
+}
