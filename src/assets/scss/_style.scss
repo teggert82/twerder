@@ -27,8 +27,20 @@
 
 .twitter-wrapper {
   margin: 0 auto;
-  margin-left: 50px;
-  margin-right: 50px;
+
+  margin-left: 200px;
+  margin-right: 200px;
+
+  @include breakpoint(medium only) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+
+}
+
+.top-bar, .top-bar ul {
+  background-color: #fff !important;
 }
 
 #header.sticky
@@ -47,6 +59,8 @@
 
   display:block;
   width: 100%;
+
+
 }
 
 .logo {
