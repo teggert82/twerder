@@ -43,16 +43,31 @@
   background-color: #fff !important;
 }
 
-#header.sticky
+#header
 {
-  position: fixed;
-  background-color: #fff;
-  width: 100%;
-  max-width: 75rem;
-  z-index: 1;
-  -webkit-box-shadow:0 10px 5px #264729;
-  -moz-box-shadow:0 10px 5px #264729;
-  box-shadow:0 10px 5px #264729;
+
+  .logo-content {
+    span {
+      color: #348C3D;
+      font-weight: bold;
+      letter-spacing: 5px;
+      font-size: 50px;
+    }
+  }
+
+  &.sticky {
+
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    max-width: 75rem;
+    z-index: 1;
+    -webkit-box-shadow: 0 10px 5px #264729;
+    -moz-box-shadow: 0 10px 5px #264729;
+    box-shadow: 0 10px 5px #264729;
+
+  }
+
 }
 
 .menu {
