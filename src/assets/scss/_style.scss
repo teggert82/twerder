@@ -1,7 +1,16 @@
+h1 {
+
+  font-size: 1.5rem;
+
+  @media screen and (min-width: 20em) {
+    font-size: 2rem !important;
+  }
+}
+
+
 .row {
   background: #348C3D;
 }
-
 
 .flexslider {
 
@@ -45,20 +54,33 @@
 
 #header
 {
+  padding-top: 15px;
+  .logo-licence {
+    font-size: 11px;
+    color: #000;
+    display: block;
+    letter-spacing: normal;
+    padding-bottom: 5px;
+  }
 
   .logo-content {
     span {
       color: #348C3D;
       font-weight: bold;
       letter-spacing: 5px;
-      font-size: 50px;
+      font-size: 13px;
+
+      @include breakpoint(large only) {
+        font-size: 50px;
+      }
     }
   }
 
   &.sticky {
 
     position: fixed;
-    background-color: #fff;
+    top: 0;
+    background-color: #348C3D;
     width: 100%;
     max-width: 75rem;
     z-index: 1;
@@ -102,4 +124,8 @@ form {
   padding-left: 40px !important;
   padding-right: 40px !important;
   margin: 0 auto !important;
+}
+
+.imprint {
+
 }
