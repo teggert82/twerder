@@ -1,24 +1,54 @@
 {{> menu }}
-<div class="row">
-    <div class="large-12 medium-12 small-12 text-center columns">
-        <form action="test.php" method="post" id="memberform">
-            <p>Ich beantrage die Mitgliedschaft im Verein „Werder Fanclub #twerder“</p>
-            mit Wirkung zum:<br>
-            <input type="text" name="eintrittsdatum" placeholder="Eintrittsdatum" value="">
-            Name:<br>
-            <input type="text" name="name" placeholder="Name" value="">
-            Twitteraccount:<br>
-            <input type="text" name="account" placeholder="Twitteraccount" value="@">
-            Geburtsdatum<br>
-            <input type="text" name="geburtstag" placeholder="Geburtsdatum" value="">
-            Anschrift<br>
-            <input type="text" name="anschrift" placeholder="Anschrift" value="">
-            <input type="text" name="anschrift_2" placeholder="Anschrift" value="">
-            <input type="text" name="anschrift_3" placeholder="Anschrift" value="">
-            <p>Ein Exemplar der geltenden Satzung und den Link zum SV Werder Bremen Fan Ethik Kodex habe ich erhalten.
-                Ich erkenne die Satzung des Vereins „Werder Fanclub #twerder“ und den SV Werder Bremen Fan Ethik Kodex an
-                und werde den Verein bei der Verwirklichung seiner Ziele unterstützen.</p>
-            <input type="submit" value="Submit">
+<div class="row member">
+    <div class="large-12 medium-12 small-12 text-center columns formular">
+        <form action="form.php" method="post" id="memberform">
+        <div class="important">
+            <p>zum Werder-Ethik-Kodex: <a href="http://www.werder.de/de/werder-bewegt/ueber-werder-bewegt/werder-ethik-kodex/" target="_blank">klick</a></p>
+            <p>unsere Satzung: <a href="assets/img/satzung.pdf" target="_blank">Satzung</a> </p>
+        </div>
+
+        <p class="headline">Ich beantrage die Mitgliedschaft im Verein „Werder Fanclub #twerder“</p>
+
+
+
+            <p>
+                <span>mit Wirkung zum:</span>
+                <input type="text" id="date" name="eintrittsdatum" placeholder="Eintrittsdatum">
+            </p>
+            <p>
+                <span>Name:</span>
+            <input type="text" id="name" name="name" placeholder="Name" value="" required>
+            </p>
+            <p>
+                <span>Emailadresse:</span>
+                <input type="text" id="Email" name="email" placeholder="Email Adresse" value="" required>
+            </p>
+            <p>
+                <span>Twitteraccount:</span>
+            <input type="text" id="account" name="account" placeholder="Twitteraccount" value="@" required>
+            </p>
+            <p>
+                <span>
+                    Geburtsdatum:
+                </span>
+
+            <input type="text" id="geburtstag" name="geburtstag" placeholder="Geburtsdatum" >
+            </p>
+        <p>
+            <span>
+                Anschrift:
+            </span>
+
+            <input type="text" id="anschrift_1" name="anschrift" placeholder="Anschrift" >
+            <input type="text" id="anschrift_2" name="anschrift_2" placeholder="Anschrift">
+            <input type="text" id="anschrift_3" name="anschrift_3" placeholder="Anschrift">
+        </p>
+            <div class="important">
+                <p class="legal">Ein Exemplar der geltenden <a href="assets/img/satzung.pdf" target="_blank">Satzung</a> und den Link zum <a href="http://www.werder.de/de/werder-bewegt/ueber-werder-bewegt/werder-ethik-kodex/" target="_blank">SV Werder Bremen Fan Ethik Kodex</a> habe ich erhalten.
+                    Ich erkenne die Satzung des Vereins „Werder Fanclub #twerder“ und den SV Werder Bremen Fan Ethik Kodex an
+                    und werde den Verein bei der Verwirklichung seiner Ziele unterstützen.</p>
+            </div>
+            <input type="submit" value="Ich will mitmachen!!">
         </form>
     </div>
 </div>

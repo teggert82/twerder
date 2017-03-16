@@ -10,6 +10,8 @@ h1 {
 
 .row {
   background: #348C3D;
+
+
 }
 
 .flexslider {
@@ -19,7 +21,8 @@ h1 {
   .slides {
     img {
       margin: 0 auto;
-      width: auto;
+      width: 500px;
+      height: auto;
     }
   }
 }
@@ -37,8 +40,8 @@ h1 {
 .twitter-wrapper {
   margin: 0 auto;
 
-  margin-left: 200px;
-  margin-right: 200px;
+  //margin-left: 200px;
+  //margin-right: 200px;
 
   @include breakpoint(medium only) {
     margin-left: 50px;
@@ -119,13 +122,67 @@ div.menu-centered {
   }
 }
 
-form {
-  max-width: 40rem;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
-  margin: 0 auto !important;
+.member {
+  padding-bottom: 60px;
+
+  .important {
+    font-weight: bold;
+    background: #FFFFFF;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+  }
+
+  .headline {
+    font-weight: bold;
+  }
+
+  form {
+    max-width: 40rem;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin: 0 auto !important;
+
+    p {
+      overflow: hidden;
+    }
+
+    span {
+      float:left;
+      max-width: 12rem;
+      width: 100%;
+      text-align: left;
+    }
+
+    input {
+      max-width: 22rem;
+      width:100%;
+      float: right;
+    }
+
+    .legal {
+
+    }
+
+  }
+
+
 }
 
-.imprint {
+.menu > li, .menu.horizontal > li {
 
+  @media (max-width: 639px) { /* Breite beträgt höchstens 1024px */
+    display: block !important;
+  }
+}
+
+.thanks {
+  .hashtag {
+    font-weight:bold;
+  }
+
+  a {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: underline;
+  }
 }
